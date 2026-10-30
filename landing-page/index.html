@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Landing page personal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <h1>Hola, soy Nombre Apellido</h1>
+  <p>Desarrollador web en formación. Construyo páginas claras, rápidas y adaptables a cualquier pantalla.</p>
+  <a class="btn" href="#contacto">Contactar</a>
+</header>
+<main>
+  <section class="servicios">
+    <h2>Qué sé hacer</h2>
+    <div class="grid">
+      <article><h3>Maquetación</h3><p>HTML semántico y CSS con Flexbox y Grid.</p></article>
+      <article><h3>Diseño adaptable</h3><p>Interfaces que funcionan en móvil, tableta y ordenador.</p></article>
+      <article><h3>Control de versiones</h3><p>Trabajo con Git y GitHub en todos mis proyectos.</p></article>
+    </div>
+  </section>
+  <section id="contacto" class="contacto">
+    <h2>Contacto</h2>
+    <form id="form">
+      <label for="nombre">Nombre</label>
+      <input id="nombre" required>
+      <label for="email">Correo electrónico</label>
+      <input id="email" type="email" required>
+      <label for="msg">Mensaje</label>
+      <textarea id="msg" rows="4" required></textarea>
+      <button class="btn" type="submit">Enviar mensaje</button>
+      <p id="estado" role="status"></p>
+    </form>
+  </section>
+</main>
+<footer><p>© 2026 Nombre Apellido</p></footer>
+<script>
+document.getElementById('form').addEventListener('submit', e => {
+  e.preventDefault();
+  document.getElementById('estado').textContent = 'Mensaje validado correctamente (demo sin servidor).';
+  e.target.reset();
+});
+</script>
+</body>
+</html>
