@@ -14,7 +14,7 @@ HTML5 semántico, CSS3 (variables, Flexbox, Grid), JavaScript básico.
 Abre `index.html` en el navegador o visita la demo: ENLACE_DEMO
 
 ## Autoría y uso de IA
-Proyecto desarrollado para el módulo IPE II con apoyo de una herramienta de IA para el código base. Personalicé: (escribe aquí lo que cambies tú).
+Proyecto desarrollado para el módulo IPE II con apoyo de una herramienta de IA para el código base.
 
 ## Autor
-Nombre Apellido
+Noel Miermont Lanza
